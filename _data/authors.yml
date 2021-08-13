@@ -1,0 +1,12 @@
+
+Chanji :
+  username: Chanji    # user name : martin
+  name: Changji Kim        # user full name : Martin Luther King
+  url_full:             # Homepage url
+  url:
+  bio: Clean Code
+                        # 회사정보
+  picture: assets/built/images/economy-author-logo.jpg   # author image
+  facebook:             # facebook ID
+  twitter:              # twitter ID
+  cover: False

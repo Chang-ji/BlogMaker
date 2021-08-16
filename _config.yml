@@ -8,7 +8,7 @@ owner:
   name:           Changji
   avatar:         photo.jpg
   bio:            "hongik in elecronic"
-  email:          moon9342@gmail.com
+  email:          bla321@naver.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:
   facebook:
@@ -51,7 +51,7 @@ title: Code Training
 description: 작업 향상 개선을 위한 블로그
 # blog home에 표시될 blog에 대한 전반적인 설명.
 
-cover: assets/built/images/blog-cover1.png
+cover: assets/built/images/bus.jpg
 # blog home에 표시될 blog cover image.
 
 logo:
@@ -63,7 +63,7 @@ favicon: assets/built/images/favicon.jpg
 production_url: https://Chang-ji.github.io/
 # 최종적으로 blog가 운영될 url
 
-source_url: https://github.com/moon9342/GitHubPageMaker/
+source_url: https://github.com/Chang-ji/GitHubPageMaker/
 # blogmaker(jekyll source folder)에 대한 github repository
 
 # Social info
@@ -110,7 +110,7 @@ feed:
 safe: False
 lsi: False
 
-username: moon9342
+username: Chang-ji
 repo: GitHubPageMaker
 # username : travis-ci와 연동하는 github의 username
 # repo: travis-ci와 연동하는 github의 repository이름
@@ -145,7 +145,7 @@ exclude:
   - assets/images
   - _posts/angular
   - _posts/et-cetera
-  - _posts/python
+#  - _posts/python
   - _posts/typescript
 #  - _posts/jekyll
   - _posts/iot

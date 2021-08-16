@@ -1,20 +1,20 @@
-Markdown :
-  name: Markdown
+markdown :
+  name: markdown
   description: False
-  cover: assets/built/images/markdown.svg.png
-Vue :
-  name: Vue
+  cover: 
+vue :
+  name: vue
   description: False
-  cover: assets/built/images/background-frontend.jpg
+  cover: 
 React :
   name: React
   description: False
-  cover: assets/built/images/background-frontend.jpg
+  cover: 
 Spring :
   name: Spring
   description: False
-  cover: assets/built/images/background-frontend.jpg
+  cover: 
 Startbucks :
   name: Startbucks
   description: False
-  cover: assets/built/images/background-frontend.jpg
+  cover:

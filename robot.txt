@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Chang-ji.github.io/sitemap.xml

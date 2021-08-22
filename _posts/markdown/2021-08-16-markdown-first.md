@@ -12,4 +12,12 @@ author: Chanji
 ---
 {% include markdown-table-of-contents.html %}
 
-markdown 1 강의
+# markdown 1 강의
+
+ 
+~~~javascript
+function syntaxHighlight(code) {
+   var foo = 'Hello World';
+   var bar = 100;
+}
+~~~

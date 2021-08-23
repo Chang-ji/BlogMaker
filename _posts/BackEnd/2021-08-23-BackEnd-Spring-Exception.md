@@ -21,13 +21,24 @@ author: Chanji
 tree %cd% /f /a
 ~~~
 
+
+## Spring Boot 예외처리 파일 구조
 ~~~
 +---main
 |   +---java
 |   |   \---com
 |   |       \---example
 |   |           \---exception
-|   |                   ExceptionApplication.java
+|   |               |   ExceptionApplication.java
+|   |               |
+|   |               +---advice
+|   |               |       GlobalControllerAdvice.java
+|   |               |
+|   |               +---controller
+|   |               |       ApiController.java
+|   |               |
+|   |               \---dto
+|   |                       User.java
 |   |
 |   \---resources
 |       |   application.properties
@@ -40,4 +51,35 @@ tree %cd% /f /a
             \---example
                 \---exception
                         ExceptionApplicationTests.java
+~~~
+
+> GlobalControllerAdvice.java
+~~~java
+@RestControllerAdvice
+@RestControllerAdvice
+public class GlobalControllerAdvice {
+
+    @ExceptionHandler(value = Exception.class) // 예외처리 Handler 모든 예외에 대해서 처리함
+    public ResponseEntity exception(Exception e) {
+        System.out.println(e.getClass().getName()); // Exception 클래스 명
+        System.out.println("----------------------------------------");
+        System.out.println(e.getLocalizedMessage());
+        System.out.println("----------------------------------------");
+
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("");
+    }
+
+    @ExceptionHandler(value = MethodArgumentNotValidException.class) // 특정 메소드의 예외를 처리 MethodArgumentNotValidException에 대한 예외 처리
+    public ResponseEntity methodArgumentNotValidException(MethodArgumentNotValidException e) {
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+    }
+}
+~~~
+
+> ApiController.java
+~~~java
+~~~
+
+> User.java
+~~~java
 ~~~

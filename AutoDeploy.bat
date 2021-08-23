@@ -3,3 +3,5 @@ cd output
 
 call GitPulloutput.bat
 call GitPushoutput.bat
+
+exit

@@ -71,7 +71,7 @@ public class GlobalControllerAdvice {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("");
     }
 
-    @ExceptionHandler(value = MethodArgumentNotValidException.class) // 특정 메소드의 예외를 처리 MethodArgumentNotValidException에 대한 예외 처리
+    @ExceptionHandler(value = MethodArgumentNotValidException.class) // 특정 메소드의 예외를 처리(MethodArgumentNotValidException) MethodArgumentNotValidException에 대한 예외 처리
     public ResponseEntity methodArgumentNotValidException(MethodArgumentNotValidException e) {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
     }

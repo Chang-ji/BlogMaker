@@ -172,6 +172,8 @@ public class ApiControllerAdvice {
 
     @ExceptionHandler(value = ConstraintViolationException.class) // 특정 메소드의 예외를 처리 ConstraintViolationException 대한 예외 처리
     public ResponseEntity constraintViolationException(ConstraintViolationException e, HttpServletRequest httpServletRequest) {
+        System.out.println("ConstraintViolationException 예외 처리");
+
         List<Error> errorList = new ArrayList<>();
 
         e.getConstraintViolations().forEach(error -> {
@@ -211,6 +213,7 @@ public class ApiControllerAdvice {
 
 > 위와 같은 것들을 구현 할때 Debug 기능을 이용해서 해당하는 값들을 잘 분석하기 바람
 
+- Spliterator에 대한 링크: https://jistol.github.io/java/2019/11/17/spliterator/
 
 
 

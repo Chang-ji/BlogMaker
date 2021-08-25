@@ -21,7 +21,7 @@ author: Chanji
 - 주로 Spring Framework 에서는 request / response 의 Logging 용도로 활용하거나, 인증과 관련된 Logic 들을 해당 Filter 에서 처리한다.
 - 이를 선/후 처리 함으로써, Service business logic과 분리 시킨다.
 
-### ContentCachingRequestWrapper, ContentCachingResponseWrapper
+#### ContentCachingRequestWrapper 예제 부분
 - Filter에서 한번 읽으면 AOP 부분에서 다시 읽기 불가능해서 해당 클래스를 사용
 - 해당 부분 예시: https://ddasi-live.tistory.com/83
 
@@ -56,7 +56,7 @@ public class GlobalFilter implements Filter {
 ~~~
 - Mapping이 이루어지기 전에 발생한다.
 - chain.doFilter 가 작동된 이후에 데이터를 읽어야 오류가 나지 않는다.
-- 필터로 먼저 들어오기 때문에 ContentCachingRequestWrapper, ContentCachingResponseWrapper 사용하여서 값을 저장해야한다.
+- 필터로 먼저 들어오기 때문에 ContentCaching 부분 사용하여서 값을 저장해야한다.
 - httpServletResponse.copyBodyToResponse(); 실행하여 응답을 복사해주어야 Client가 응답을 볼 수 있다.
 
 ## Interceptor
@@ -67,10 +67,10 @@ public class GlobalFilter implements Filter {
 - [메타 어노테이션에 대한 내용](https://velog.io/@kwj1270/%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98)
 
 ### Interceptor 관련 예시
-
-1. GET METHOD 요청
+#### 1. GET METHOD 요청
    > http://localhost:8080/api/private/hello?name=aaa
-2. 요청하면 AuthInterceptor.java 로 들어옴
+
+#### 2. 요청하면 AuthInterceptor.java 로 들어옴
 ~~~java
 @Slf4j
 @Component
@@ -122,7 +122,10 @@ public class AuthInterceptor implements HandlerInterceptor {
     }
 }
 ~~~
+
 - interceptor를 등록하기 위해서는 MvcConfig.java 파일을 만들어서 설정해야한다.
+
+
 ~~~java
 @Configuration
 @RequiredArgsConstructor
@@ -137,13 +140,15 @@ public class MvcConfig implements WebMvcConfigurer {
 }
 ~~~
 
-3. Throw 받으면 아래의 클래스를 실행
+#### 3. Throw 받으면 아래의 클래스를 실행
+
 ~~~java
 public class AuthException extends RuntimeException {
 }
 ~~~
 
-4. 아래의 필터에서 AuthException 을 감지하여서 예외 처리를 한다.
+#### 4. 아래의 필터에서 AuthException 을 감지하여서 예외 처리를 한다.
+
 ~~~java
 @RestControllerAdvice
 public class GlobalExceptionHandler {
@@ -155,7 +160,7 @@ public class GlobalExceptionHandler {
 }
 ~~~
 
-5. 위의 예외처리가 작동하면서 Client는 401 Error 가 보이게 된다.
+#### 5. 위의 예외처리가 작동하면서 Client는 401 Error 가 보이게 된다.
 
 
 

@@ -3,7 +3,7 @@ layout: post
 current: post
 cover: assets/built/images/sky.jpg
 navigation: True
-title: BackEnd - Filter - Interceptor
+title: Filter Interceptor
 date: 2021-08-24 10:18:00
 tags: [BackEnd]
 class: post-template
@@ -23,7 +23,7 @@ author: Chanji
 
 #### ContentCachingRequestWrapper 예제 부분
 - Filter에서 한번 읽으면 AOP 부분에서 다시 읽기 불가능해서 해당 클래스를 사용
-- 해당 부분 예시: https://ddasi-live.tistory.com/83
+- 해당 부분 예시: [https://ddasi-live.tistory.com/83](https://jistol.github.io/java/2019/11/17/spliterator/)
 
 
 ### Filter 관련 코드
@@ -57,7 +57,7 @@ public class GlobalFilter implements Filter {
 - Mapping이 이루어지기 전에 발생한다.
 - chain.doFilter 가 작동된 이후에 데이터를 읽어야 오류가 나지 않는다.
 - 필터로 먼저 들어오기 때문에 ContentCaching 부분 사용하여서 값을 저장해야한다.
-- httpServletResponse.copyBodyToResponse(); 실행하여 응답을 복사해주어야 Client가 응답을 볼 수 있다.
+- httpServletResponse.copyBodyToResponse() 실행하여 응답을 복사해주어야 Client가 응답을 볼 수 있다.
 
 ## Interceptor
 - Interceptor 란 Filter 와 매우 유사한 형태로 존재 하지만, 차이점은 Spring Context 에 등록된다.

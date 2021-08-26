@@ -3,7 +3,7 @@ layout: post
 current: post
 cover: assets/built/images/sky.jpg
 navigation: True
-title: BackEnd - Spring-Validation-Exception-Process
+title: Spring Validation Exception Process
 date: 2021-08-24 10:18:00
 tags: [BackEnd]
 class: post-template
@@ -213,7 +213,7 @@ public class ApiControllerAdvice {
 
 > 위와 같은 것들을 구현 할때 Debug 기능을 이용해서 해당하는 값들을 잘 분석하기 바람
 
-- Spliterator에 대한 링크: https://jistol.github.io/java/2019/11/17/spliterator/
+- Spliterator에 대한 링크: [https://jistol.github.io/java/2019/11/17/spliterator/](https://jistol.github.io/java/2019/11/17/spliterator/)
 
 
 

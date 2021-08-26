@@ -3,7 +3,7 @@ layout: post
 current: post
 cover: assets/built/images/sky.jpg
 navigation: True
-title: BackEnd Spring JUnit
+title: Spring JUnit
 date: 2021-08-24 10:18:00
 tags: [BackEnd]
 class: post-template
@@ -15,7 +15,7 @@ author: Chanji
 
 # Spring Web JUnit
 
-### JUnit으로 테스트 하기
+## JUnit으로 테스트 하기
 - TDD (Test-driven Development)
   > 테스트 주도 개발에서 사용하지만, 코드의 유지 보수 및 운영 환경에서의 에러를 미리 방지 하기 위해서 단위 별로 검증하는 테스트 프레임 워크
 - 단위테스트
@@ -28,13 +28,13 @@ author: Chanji
   > build.gradle 파일에 plugins 에 id 'jacoco 설정하여 사용가능
   > gradle > Task > verification > test 더블클릭으로 실행가능
 
-### JUnit 테스트 관련 Mockito
+## JUnit 테스트 관련 Mockito
 - [https://mvnrepository.com/artifact/org.mockito/mockito-core](https://mvnrepository.com/artifact/org.mockito/mockito-core)
 - [https://mvnrepository.com/artifact/org.mockito/mockito-junit-jupiter](https://mvnrepository.com/artifact/org.mockito/mockito-junit-jupiter)
 
 
-### JUnit 관련 테스트 코드
-#### 1. 전체 스프링 부트 활성화 시켜서 테스트
+## JUnit 관련 테스트 코드
+### 1. 전체 스프링 부트 활성화 시켜서 테스트
 ~~~java
 @SpringBootTest
 // Import 시켜서 MarketApi, DollarCalculator 주입
@@ -64,8 +64,8 @@ public class DollarCalculatorTest {
 
 }
 ~~~
-#### 2. Controller 테스트
-##### 기본적인 부분
+### 2. Controller 테스트
+#### 기본적인 부분
 ~~~java
 // 테스트 할려는 컨트롤러 선택
 @WebMvcTest(CalculatorApiController.class)
@@ -91,7 +91,7 @@ public class CalculatorApiControllerTest {
 }
 ~~~
 
-##### GET 방식 테스트
+#### GET 방식 테스트
 ~~~java
 @Test
 public void sumTest() throws Exception {
@@ -114,7 +114,7 @@ public void sumTest() throws Exception {
 }
 ~~~
 
-##### POST 방식
+#### POST 방식
 ~~~java
 @Test
 public void minusTest() throws Exception {

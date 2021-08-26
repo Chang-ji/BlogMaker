@@ -3,7 +3,7 @@ layout: post
 current: post
 cover: assets/built/images/sky.jpg
 navigation: True
-title: BackEnd Spring Swagger
+title: Spring Swagger
 date: 2021-08-24 10:18:00
 tags: [BackEnd]
 class: post-template

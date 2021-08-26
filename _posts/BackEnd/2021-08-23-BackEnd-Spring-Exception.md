@@ -3,7 +3,7 @@ layout: post
 current: post
 cover: assets/built/images/sky.jpg
 navigation: True
-title: BackEnd - Spring
+title: Spring Exception
 date: 2021-08-22 10:18:00
 tags: [BackEnd]
 class: post-template
@@ -15,8 +15,9 @@ author: Chanji
 # Spring Web Exception
 
 ## window 트리 형태로 파일 구조 출력
-- 트리 주소: https://bustar.tistory.com/231</br>
-- 현재 위치: https://m.blog.naver.com/superyeoju/221737848729</br>
+- 트리 주소: [https://bustar.tistory.com/231](https://bustar.tistory.com/231)</br>
+- 현재 위치: [https://m.blog.naver.com/superyeoju/221737848729](https://m.blog.naver.com/superyeoju/221737848729)</br>
+
 ~~~bash
 tree %cd% /f /a
 ~~~

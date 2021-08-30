@@ -15,6 +15,16 @@ author: Chanji
 
 # Spring Web RestAPI Naver Market List 
 
+## 정규식 만들기 사이트 참고
+- [https://regex101.com/](https://regex101.com/)
+- [https://highcode.tistory.com/6](https://highcode.tistory.com/6)
+
+## 스웨거 사이트
+- [https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter/3.0.0](https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter/3.0.0)
+
+
+
+
  
 
 

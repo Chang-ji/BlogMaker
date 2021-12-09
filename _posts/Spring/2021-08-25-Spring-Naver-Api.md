@@ -5,12 +5,16 @@ cover: assets/built/images/sky.jpg
 navigation: True
 title: Spring Naver Open API
 date: 2021-08-24 10:18:00
-tags: [BackEnd]
+tags: [Spring]
 class: post-template
 subclass: 'post'
 author: Chanji
 ---
-{% include BackEnd-table-of-contents.html %}
+
+네이버 오픈 API를 통해서 지역 맛집 사이트 구현
+
+
+{% include Spring-table-of-contents.html %}
 ***
 
 # Spring Web Naver Open API

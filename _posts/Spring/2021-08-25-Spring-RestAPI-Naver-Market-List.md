@@ -5,12 +5,15 @@ cover: assets/built/images/sky.jpg
 navigation: True
 title: Spring RestAPI Naver Market List 
 date: 2021-08-24 10:18:00
-tags: [BackEnd]
+tags: [Spring]
 class: post-template
 subclass: 'post'
 author: Chanji
 ---
-{% include BackEnd-table-of-contents.html %}
+
+정규식과 스웨거 등의 도구를 활용하여 맛집 리스트 만들기
+
+{% include Spring-table-of-contents.html %}
 ***
 
 # Spring Web RestAPI Naver Market List 

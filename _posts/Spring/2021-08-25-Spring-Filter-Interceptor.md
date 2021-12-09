@@ -5,12 +5,16 @@ cover: assets/built/images/sky.jpg
 navigation: True
 title: Filter Interceptor
 date: 2021-08-24 10:18:00
-tags: [BackEnd]
+tags: [Spring]
 class: post-template
 subclass: 'post'
 author: Chanji
 ---
-{% include BackEnd-table-of-contents.html %}
+
+스프링 필터와 인터셉터에 대해서 이해하고 코드를 구현
+
+
+{% include Spring-table-of-contents.html %}
 ***
 
 # Spring Web Filter Interceptor

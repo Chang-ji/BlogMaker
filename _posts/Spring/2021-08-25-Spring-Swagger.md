@@ -5,12 +5,16 @@ cover: assets/built/images/sky.jpg
 navigation: True
 title: Spring Swagger
 date: 2021-08-24 10:18:00
-tags: [BackEnd]
+tags: [Spring]
 class: post-template
 subclass: 'post'
 author: Chanji
 ---
-{% include BackEnd-table-of-contents.html %}
+
+스프링 REST API에 편리한 SWWAGER를 설치하여 편리하게 API 테스트하고 문서화
+
+
+{% include Spring-table-of-contents.html %}
 ***
 
 # Spring Web Swagger

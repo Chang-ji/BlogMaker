@@ -5,12 +5,16 @@ cover: assets/built/images/sky.jpg
 navigation: True
 title: Spring Exception
 date: 2021-08-22 10:18:00
-tags: [BackEnd]
+tags: [Spring]
 class: post-template
 subclass: 'post'
 author: Chanji
 ---
-{% include BackEnd-table-of-contents.html %}
+
+스프링 예외처리 구조와 서비스 구현 코드를 작성
+
+
+{% include Spring-table-of-contents.html %}
 ***
 # Spring Web Exception
 

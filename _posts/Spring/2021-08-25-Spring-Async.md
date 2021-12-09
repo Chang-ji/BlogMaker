@@ -5,12 +5,16 @@ cover: assets/built/images/sky.jpg
 navigation: True
 title: Spring Async
 date: 2021-08-24 10:18:00
-tags: [BackEnd]
+tags: [Spring]
 class: post-template
 subclass: 'post'
 author: Chanji
 ---
-{% include BackEnd-table-of-contents.html %}
+
+스프링 비동기 부분에 대한 구현 코드 작성
+
+
+{% include Spring-table-of-contents.html %}
 ***
 
 # Spring Web Async
